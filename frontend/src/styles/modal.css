@@ -1,0 +1,42 @@
+﻿.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: #11182799;
+  animation: fadeIn .16s ease;
+}
+
+.confirm-card {
+  width: min(420px,100%);
+  padding: 24px;
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.modal-actions button {
+  padding: 9px 14px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modal-actions .danger {
+  background: #dc2626;
+  color: white;
+}
+
+.modal-actions .primary {
+  background: var(--primary);
+  color: white;
+}

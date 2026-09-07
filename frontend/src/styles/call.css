@@ -1,0 +1,138 @@
+﻿.call-button {
+  width: 100%;
+  height: 44px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 8px;
+  background: #059669;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.video-call-button {
+  background: #4169e1;
+}
+
+.incoming-call {
+  position: fixed;
+  right: 22px;
+  top: 90px;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px;
+  border-radius: 13px;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 15px 45px #0004;
+}
+
+.incoming-call button,
+.call-controls button {
+  padding: 9px 13px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+
+.danger {
+  background: #dc2626 !important;
+  color: white !important;
+}
+
+.call-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: #020617dd;
+}
+
+.call-modal {
+  width: min(900px, 100%);
+  padding: 20px;
+  border-radius: 18px;
+  background: #111827;
+  color: white;
+}
+
+.call-modal h3 {
+  text-align: center;
+}
+
+.audio-call-status {
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 14px;
+  background: #020617;
+}
+
+.audio-call-avatar {
+  width: 96px;
+  height: 96px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #4169e1;
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.audio-call-status p {
+  margin: 4px 0 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.audio-call-status span {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.video-call-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #020617;
+}
+
+.video-call-stage > video:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-call-stage .local-video {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 25%;
+  height: 28%;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  background: #111827;
+  object-fit: cover;
+}
+
+.call-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}

@@ -1,0 +1,77 @@
+﻿.profile-modal {
+  position: relative;
+  width: min(520px,calc(100vw - 30px));
+  max-height: 90vh;
+  overflow: auto;
+  padding: 26px;
+  border-radius: 18px;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 24px 70px #0004;
+}
+
+.profile-modal h2 {
+  margin-top: 0;
+}
+
+.profile-account-id {
+  margin: -8px 0 18px;
+  color: #64748b;
+  font-family: Consolas, monospace;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.profile-modal form {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.profile-modal label {
+  display: grid;
+  gap: 6px;
+  font-weight: 700;
+}
+
+.profile-modal input {
+  height: 43px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.profile-avatar-block {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.avatar-upload-button,.profile-modal .primary {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 9px;
+  background: var(--primary);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.avatar-upload-button input {
+  display: none;
+}
+
+.modal-close {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font-size: 28px;
+  cursor: pointer;
+}

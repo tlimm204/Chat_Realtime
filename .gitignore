@@ -1,0 +1,31 @@
+# Dependencies
+backend/node_modules/
+frontend/node_modules/
+
+# Secrets and local environment
+backend/.env
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Build output and logs
+frontend/dist/
+*.log
+
+# User uploads (keep the directory only)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Internal report-generation files
+.codex-doc-report/
+
+# Office temporary files and superseded report drafts
+~$*.docx
+Bao_cao_tieu_luan_CHAT_PROJECT_bo_sung_Chuong_1.docx
+Bao_cao_tieu_luan_CHAT_PROJECT_hoan_chinh.docx
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,26 @@
+﻿.context-menu {
+  position: fixed;
+  z-index: 80;
+  width: 190px;
+  padding: 7px;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  background: var(--surface);
+  box-shadow: 0 15px 40px #0004;
+  animation: menuIn .15s ease;
+}
+
+.context-menu button {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+}
+
+.context-menu button:hover {
+  background: var(--surface-soft);
+}

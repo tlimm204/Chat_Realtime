@@ -1,0 +1,51 @@
+﻿@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+@keyframes menuIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+
+}
+
+@keyframes toastIn {
+
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+
+}
+
+.message-row {
+  animation: fadeIn .2s ease;
+}
+
+.room-item,.send-button,.select-image-button {
+  transition: transform .15s ease,background .15s ease;
+}
+
+.room-item:hover {
+  transform: translateX(3px);
+}
