@@ -48,8 +48,3 @@ cd frontend
 npm run lint
 npm run build
 ```
-
-## Tài liệu
-
-- `Bao_cao_tieu_luan_CHAT_PROJECT_cai_dat_va_GitHub.docx`: báo cáo tiểu luận hoàn chỉnh.
-- `Tai_lieu_thuyet_trinh_CHAT_PROJECT.docx`: tài liệu hỗ trợ thuyết trình.
